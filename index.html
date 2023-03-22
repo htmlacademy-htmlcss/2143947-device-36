@@ -30,17 +30,60 @@
             <li class="navigation-item">
               <a class="navigation-link user-navigation-link" href="#">
                 Корзина
-                <!-- <span class="cart-count">
+                <span class="cart-count">
                   2
-                </span> -->
+                </span>
               </a>
+              <div class="cart-inner">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">Любительская селфи-палка</a>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">Профессиональная селфи-палка</a>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <p class="cart-total-count">Товаров: <span>2</span></p>
+                  <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
+                </div>
+                <a class="cart-button">Открыть корзину</a>
+              </div>
             </li>
           </ul>
         </nav>
         <nav class="product-navigation">
-          <a class="navigation-link product-navigation-link product-catalog" href="#">
-            Каталог товаров
-          </a>
+          <div class="product-catalog">
+            <a class="navigation-link product-navigation-link product-catalog-link" href="#">
+              Каталог товаров
+            </a>
+            <div class="product-catalog-menu">
+              <ul class="product-catalog-list">
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="product-catalog-list">
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="product-catalog-list">
+                <li class="product-catalog-item">
+                  <a class="product-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link product-navigation-link" href="#">
@@ -318,5 +361,42 @@
         <span class="visually-hidden">Сайт html academy.</span>
       </a>
     </footer>
+
+    <section class="modal-container">
+      <div class="modal">
+        <h2 class="modal-heading heading">Доставка под заказ</h2>
+        <button class="button modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="order-form-item username">
+            <label class="form-label" for="username">Ваше имя:</label>
+            <input class="form-input" type="text" id="username" name="username" placeholder="Введите имя" required>
+          </div>
+          <div class="order-form-item email">
+            <label class="form-label" for="email">Ваш e-mail:</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="почта" required>
+            <span class="order-form-message">Забавный у вас адрес</span>
+          </div>
+          <div class="order">
+            <div class="order-products product">
+              <div class="order-products-item product-name">
+                <label class="form-label" for="product-name">Что нужно привезти:</label>
+                <input class="form-input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
+              </div>
+              <div class="order-products-item product-count">
+                <label class="form-label" for="product-count">Что нужно привезти:</label>
+                <div class="order-product-container">
+                  <button class="count count-minus" type="button"></button>
+                  <input class="form-input" type="text" id="product-count" name="product-count" placeholder="1" required>
+                  <button class="count count-plus" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
   </body>
 </html>
