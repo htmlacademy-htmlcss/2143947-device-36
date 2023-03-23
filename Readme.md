@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кирилл Злоказов](https://up.htmlacademy.ru/htmlcss/36/user/2143947).
-* Наставник: [Павел Позняк] (https://htmlacademy.ru/profile/id907403).
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
