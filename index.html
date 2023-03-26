@@ -16,6 +16,7 @@
         <div class="top-header-block">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="search-form-input" type="text" placeholder="Поиск по сайту" required>
+            <span class="search-form-outline"></span>
             <button class="search-form-button button" type="submit">Найти</button>
           </form>
           <nav class="user-navigation">
@@ -29,17 +30,27 @@
                 <div class="cart-inner">
                   <ul class="cart-list">
                     <li class="cart-item">
-                      <a class="cart-link" href="#">Любительская селфи-палка</a>
+                      <a class="cart-inner-link" href="#">
+                        <img src="images/newbe-monopod-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <span>Любительская селфи-палка</span>
+                      </a>
+                      <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
                     </li>
                     <li class="cart-item">
-                      <a class="cart-link" href="#">Профессиональная селфи-палка</a>
+                      <a class="cart-inner-link" href="#">
+                        <img src="images/profi-monopod-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                        <span>Профессиональная селфи-палка</span>
+                      </a>
+                      <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
                     </li>
                   </ul>
                   <div class="cart-total">
                     <p class="cart-total-count">Товаров: <span>2</span></p>
                     <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
                   </div>
-                  <a class="cart-button">Открыть корзину</a>
+                  <div class="cart-button-wrapper">
+                    <a class="cart-button" href="#">Открыть корзину</a>
+                  </div>
                 </div>
               </div>
             </div>
