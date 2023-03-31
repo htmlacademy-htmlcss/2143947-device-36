@@ -366,33 +366,43 @@
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="user-information">
             <div class="order-form-item username">
-              <label class="modal-form-label" for="username">Ваше имя:</label>
+              <label class="modal-form-label " for="username">Ваше имя:</label>
               <input class="modal-form-input" type="text" id="username" name="username" placeholder="Введите имя" required>
+              <span class="order-form-decoration"></span>
             </div>
             <div class="order-form-item email">
               <label class="modal-form-label" for="email">Ваш e-mail:</label>
-              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта" required>
+              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта">
               <span class="order-form-message">Забавный у вас адрес</span>
+              <span class="order-form-decoration"></span>
             </div>
           </div>
-          <div class="order-products product">
+          <div class="order-products">
             <div class="order-products-item product-name">
               <label class="modal-form-label" for="product-name">Что нужно привезти:</label>
               <input class="modal-form-input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
+              <span class="order-form-decoration"></span>
             </div>
             <div class="order-products-item product-count">
               <label class="modal-form-label" for="product-count">Количество:</label>
               <div class="order-product-container">
-                <button class="count count-minus" type="button"></button>
-                <input class="modal-form-input" type="text" id="product-count" name="product-count" placeholder="1" value="1" required>
-                <button class="count count-plus" type="button"></button>
+                <button class="count count-minus button" type="button">
+                  <svg width="16" height="3" viewBox="0 0 16 3">
+                    <path d="M16 0.786987H0V2.78699H16V0.786987Z"/>
+                  </svg>
+                </button>
+                <input class="modal-form-input count-input" type="number" id="product-count" name="product-count" placeholder="1" value="1" required>
+                <button class="count count-plus button" type="button">
+                  <svg width="16" height="17" viewBox="0 0 16 17">
+                    <path d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
           <button class="modal-submit-button button" type="submit">Отправить</button>
         </form>
       </div>
-
     </section>
   </body>
 </html>
