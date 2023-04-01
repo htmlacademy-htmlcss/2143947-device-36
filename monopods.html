@@ -109,7 +109,7 @@
     <main class="main-catalog">
       <section class="inner-header">
         <h1 class="catalog-heading heading">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -119,7 +119,7 @@
           <li class="breadcrumbs-item">
             <span class="breadcrumbs-link" tabindex="0">Моноподы для селфи</span>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="catalog">
         <div class="catalog-container">
@@ -142,30 +142,35 @@
                   <label class="control" for="black">
                     <input class="visually-hidden control-input" type="checkbox" name="color" id="black" value="black" checked>
                     <span class="control-description">Черный</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="white">
                     <input class="visually-hidden control-input" type="checkbox" name="color" id="white" value="white" checked>
                     <span class="control-description">Белый</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="blue">
                     <input class="visually-hidden control-input" type="checkbox" name="color" id="blue" value="blue">
                     <span class="control-description">Синий</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="red">
                     <input class="visually-hidden control-input" type="checkbox" name="color" id="red" value="red">
                     <span class="control-description">Красный</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="pink">
                     <input class="visually-hidden control-input" type="checkbox" name="color" id="pink" value="pink">
                     <span class="control-description">Розовый</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
               </ul>
@@ -177,12 +182,14 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
                     <span class="control-description">Есть</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
                     <span class="control-description">Нет</span>
+                    <span class="control-outline"></span>
                   </label>
                 </li>
               </ul>
@@ -192,49 +199,76 @@
           <div class="catalog-sort-container">
             <div class="catalog-sort">
               <h3 class="sort-heading heading">Сортировка:</h3>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-              </select>
+              <div class="select-control-container">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                </select>
+                <span class="select-control-outline"></span>
+              </div>
               <div class="visualization-buttons">
-                <a class="button button-up" href="#" aria-label="Показать сначала более популярные товары."></a>
-                <a class="button button-down" href="#" aria-label="Показать сначала менее популярные товары."></a>
+                <a class="button sort-button" href="#" aria-label="Показать сначала более популярные товары.">
+                  <svg width="12" height="10" viewBox="0 0 12 10">
+                    <path d="M6 0L11.5 10H0.5"/>
+                  </svg>
+                </a>
+                <a class="button sort-button button-down" href="#" aria-label="Показать сначала менее популярные товары.">
+                  <svg width="12" height="10" viewBox="0 0 12 10">
+                    <path d="M6 0L11.5 10H0.5"/>
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="product">
               <ul class="product-list">
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-link-image" width="360" height="380" src="images/newbe-monopod.jpg" alt="Любительская селфи-палка.">
-                    <p class="product-link-name">Любительская<br> селфи-палка</p>
-                    <p class="product-link-price">500 ₽</p>
+                    <div class="product-link-image-container">
+                      <span class="new">new</span>
+                      <img class="product-link-image" width="360" height="380" src="images/newbe-monopod.jpg" alt="Любительская селфи-палка.">
+                      <span class="product-link-image-condition">Подробнее</span>
+                    </div>
+                    <p class="product-link-description product-link-name">Любительская<br> селфи-палка</p>
+                    <p class="product-link-description product-link-price">500 ₽</p>
                   </a>
                 </li>
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-link-image" width="360" height="380" src="images/profi-monopod.jpg" alt="Профессиональная селфи-палка.">
-                    <p class="product-link-name">Профессиональная селфи-палка</p>
-                    <p class="product-link-price">1 500 ₽</p>
+                    <div class="product-link-image-container">
+                      <span class="new new-show">new</span>
+                      <img class="product-link-image" width="360" height="380" src="images/profi-monopod.jpg" alt="Профессиональная селфи-палка.">
+                      <span class="product-link-image-condition">Подробнее</span>
+                    </div>
+                    <p class="product-link-description product-link-name">Профессиональная селфи-палка</p>
+                    <p class="product-link-description product-link-price">1 500 ₽</p>
                   </a>
                 </li>
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-link-image" width="360" height="380" src="images/waterproof-monopod.jpg" alt="Водостойкая селфи-палка.">
-                    <p class="product-link-name">Непотопляемая<br> селфи-палка</p>
-                    <p class="product-link-price">2 500 ₽</p>
+                    <div class="product-link-image-container">
+                      <span class="new">new</span>
+                      <img class="product-link-image" width="360" height="380" src="images/waterproof-monopod.jpg" alt="Водостойкая селфи-палка.">
+                      <span class="product-link-image-condition">Подробнее</span>
+                    </div>
+                    <p class="product-link-description product-link-name">Непотопляемая<br> селфи-палка</p>
+                    <p class="product-link-description product-link-price">2 500 ₽</p>
                   </a>
                 </li>
                 <li class="product-item">
                   <a class="product-link" href="#">
-                    <img class="product-link-image" width="360" height="380" src="images/follow-me-monopod.jpg" alt="Селфи-палка с имитацией руки.">
-                    <p class="product-link-name">Селфи-палка «Следуй<br> за мной»</p>
-                    <p class="product-link-price">1 500 ₽</p>
+                    <div class="product-link-image-container">
+                      <span class="new">new</span>
+                      <img class="product-link-image" width="360" height="380" src="images/follow-me-monopod.jpg" alt="Селфи-палка с имитацией руки.">
+                      <span class="product-link-image-condition">Подробнее</span>
+                    </div>
+                    <p class="product-link-description product-link-name">Селфи-палка «Следуй<br> за мной»</p>
+                    <p class="product-link-description product-link-price">1 500 ₽</p>
                   </a>
                 </li>
               </ul>
               <a class="product-button" href="#">Загрузить ещё</a>
               <div class="pagination">
-                <a class="pagination-link previous-page pagination-link-disabled" href="#">Назад</a>
-                <ul class="pagination-list">
+                <a class="pagination-link page-select-link previous-page pagination-link-disabled" href="#">Назад</a>
+                <ol class="pagination-list">
                   <li class="pagination-item">
                     <a class="pagination-link pagination-current" href="#">1</a>
                   </li>
@@ -250,8 +284,8 @@
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">15</a>
                   </li>
-                </ul>
-                <a class="pagination-link next-page" href="#">Вперёд</a>
+                </ol>
+                <a class="pagination-link page-select-link next-page" href="#">Вперёд</a>
               </div>
             </div>
           </div>
@@ -348,7 +382,10 @@
               <span class="order-form-decoration"></span>
             </div>
             <div class="order-products-item product-count">
-              <label class="modal-form-label" for="product-count">Количество:</label>
+              <label class="modal-form-label count-label" for="product-count" tabindex="0">
+                Количество:
+                <span class="count-information">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
+              </label>
               <div class="order-product-container">
                 <button class="count count-minus button" type="button">
                   <svg width="16" height="3" viewBox="0 0 16 3">
