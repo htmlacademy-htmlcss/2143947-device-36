@@ -1540,7 +1540,8 @@ a {
 .delivery-link::after {
   content: "";
   position: absolute;
-  background-image: url(../images/information-icon.svg);
+  background-image: url(../images/delivery-information-icon.svg);
+  background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   right: 42px;
