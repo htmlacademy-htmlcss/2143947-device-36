@@ -14,53 +14,59 @@
       <a class="header-logo-link" href="index.html">
         <img src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
       </a>
-      <div class="header-container">
-        <div class="top-header-block">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="search-form-label" for="search-form">
-              <input class="search-form-input" type="text" placeholder="Поиск по сайту" id="search-form" required>
-              <span class="search-form-decoration"></span>
-            </label>
-            <button class="search-form-button button" type="submit">Найти</button>
-          </form>
-          <nav class="user-navigation">
-            <div class="user-login-wrap">
-              <a class="user-name" href="#">Коля Петухов</a>
-              <a class="user-logout" href="#">Выйти</a>
-            </div>
-            <div class="user-navigation-block">
+
+      <div class="top-header-block">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="search-form-label" for="search-form">
+            <input class="search-form-input" type="text" placeholder="Поиск по сайту" id="search-form" required>
+            <span class="search-form-decoration"></span>
+          </label>
+          <button class="search-form-button button" type="submit">Найти</button>
+        </form>
+        <nav class="user-navigation">
+          <ul class="user-login-wrap">
+            <li>
+              <a class="user-login" href="#">Коля Петухов</a>
+            </li>
+            <li>
+              <a class="user-logout user-logout-show" href="#">Выйти</a>
+            </li>
+          </ul>
+          <ul class="user-navigation-block">
+            <li>
               <a class="compare" href="#">Сравнить</a>
-              <div class="cart">
-                <a class="cart-link" href="#">Корзина<span class="cart-count">2</span></a>
-                <div class="cart-inner">
-                  <ul class="cart-list">
-                    <li class="cart-item">
-                      <a class="cart-inner-link" href="#">
-                        <img src="images/newbe-monopod-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                        <span>Любительская селфи-палка</span>
-                      </a>
-                      <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
-                    </li>
-                    <li class="cart-item">
-                      <a class="cart-inner-link" href="#">
-                        <img src="images/profi-monopod-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
-                        <span>Профессиональная селфи-палка</span>
-                      </a>
-                      <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
-                    </li>
-                  </ul>
-                  <div class="cart-total">
-                    <p class="cart-total-count">Товаров: <span>2</span></p>
-                    <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
-                  </div>
-                  <div class="cart-button-wrapper">
-                    <a class="cart-button" href="#">Открыть корзину</a>
-                  </div>
+            </li>
+            <li class="cart">
+              <a class="cart-link" href="#">Корзина</a>
+              <div class="cart-inner">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-inner-link" href="#">
+                      <img src="images/newbe-monopod-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <span>Любительская селфи-палка</span>
+                    </a>
+                    <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-inner-link" href="#">
+                      <img src="images/profi-monopod-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <span>Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="cart-item-delete button" type="button" aria-label="Удалить из корзины"></button>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <p class="cart-total-count">Товаров: <span>2</span></p>
+                  <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
+                </div>
+                <div class="cart-button-wrapper">
+                  <a class="cart-button" href="#">Открыть корзину</a>
                 </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </li>
+          </ul>
+        </nav>
+
         <nav class="product-navigation product-catalog-navigation">
           <div class="product-catalog">
             <button class="product-catalog-button button" type="button">Каталог товаров</button>
@@ -279,7 +285,7 @@
                     <a class="pagination-link" href="#">3</a>
                   </li>
                   <li class="pagination-item">
-                    <span class="pagination-link pagination-breack">...</span>
+                    <span class="pagination-link pagination-break">...</span>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">15</a>
