@@ -17,11 +17,10 @@
 
       <div class="top-header-block">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search-form-label" for="search-form">
-            <input class="search-form-input" type="text" placeholder="Поиск по сайту" id="search-form" required>
-            <span class="search-form-decoration"></span>
+          <label class="search-form-label">
+            <input class="search-form-input" type="text" aria-label="Поиск по сайту." placeholder="Поиск по сайту" required>
           </label>
-          <button class="search-form-button button" type="submit">Найти</button>
+          <button class="search-form-button" type="submit">Найти</button>
         </form>
         <nav class="user-navigation">
           <ul class="user-login-wrap">
@@ -60,7 +59,7 @@
                   <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
                 </div>
                 <div class="cart-button-wrapper">
-                  <a class="cart-button" href="#">Открыть корзину</a>
+                  <a class="cart-button button" href="#">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -99,13 +98,13 @@
           </div>
           <ul class="product-navigation-list">
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Доставка</a>
+              <a class="product-navigation-link button" href="#">Доставка</a>
             </li>
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Гарантия</a>
+              <a class="product-navigation-link button" href="#">Гарантия</a>
             </li>
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Контакты</a>
+              <a class="product-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -125,8 +124,8 @@
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="slider-link" href="#">Подробнее</a>
-                <table class="technical-parameters">
+                <a class="slider-link button" href="#">Подробнее</a>
+                <table>
                   <tr>
                     <th class="parameters-count">800 м</th>
                     <th class="parameters-count">50 м</th>
@@ -145,8 +144,8 @@
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Худеем правильно!</p>
                 <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="slider-link" href="#">Подробнее</a>
-                <table class="technical-parameters">
+                <a class="slider-link button" href="#">Подробнее</a>
+                <table>
                   <tr>
                     <th class="parameters-count">48 часов</th>
                   </tr>
@@ -163,8 +162,8 @@
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Делай селфи, как Бен Стиллер! </p>
                 <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                <a class="slider-link" href="#">Подробнее</a>
-                <table class="technical-parameters">
+                <a class="slider-link button" href="#">Подробнее</a>
+                <table>
                   <tr>
                     <th class="parameters-count">8,5 м</th>
                     <th class="parameters-count">5 кг</th>
@@ -199,27 +198,21 @@
         <ul class="categories-list">
           <li class="categories-item">
             <a class="categories-link" href="#">Виртуальная реальность</a>
-            <span class="categories-link-outline"></span>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="monopods.html">Моноподы<br> для селфи</a>
-            <span class="categories-link-outline"></span>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="#">Экшн-камеры</a>
-            <span class="categories-link-outline"></span>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="#">Фитнес-браслеты</a>
-            <span class="categories-link-outline"></span>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="#">Умные часы</a>
-            <span class="categories-link-outline"></span>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="#">Квадрокоптеры</a>
-            <span class="categories-link-outline"></span>
           </li>
         </ul>
       </section>
@@ -228,13 +221,13 @@
         <div class="services-container">
           <ul class="services-tabs-list">
             <li class="services-tabs-item">
-              <button class="tab-links tab-links-active button" type="button">Доставка</button>
+              <button class="tab-link tab-link-active button" type="button">Доставка</button>
             </li>
             <li class="services-tabs-item">
-              <button class="tab-links button" type="button">Гарантия</button>
+              <button class="tab-link button" type="button">Гарантия</button>
             </li>
             <li class="services-tabs-item">
-              <button class="tab-links button" type="button">Кредит</button>
+              <button class="tab-link button" type="button">Кредит</button>
             </li>
           </ul>
           <div class="services-tab-content">
@@ -255,8 +248,7 @@
       </section>
       <section class="delivery">
         <h2 class="visually-hidden">Доставка</h2>
-        <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
-        <span class="delivery-link-outline"></span>
+        <a class="delivery-link button" href="#">Доставим редкий товар под заказ</a>
       </section>
       <section class="contacts-group">
         <h2 class="visually-hidden">Информация об организации и контакты.</h2>
@@ -269,7 +261,7 @@
             <li class="about-us-transport-item">СДИК</li>
             <li class="about-us-transport-item">ТоксБерри</li>
           </ul>
-          <a class="about-us-link" href="#">Подробнее о нас</a>
+          <a class="about-us-link button" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h3 class="contacts-heading heading">Контакты</h3>
@@ -283,7 +275,7 @@
             <h4 class="work-time-heading">Время работы</h4>
             <p class="work-time-description">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
           </div>
-          <a class="contacts-link" href="#">Напишите нам</a>
+          <a class="contacts-link button" href="#">Напишите нам</a>
         </div>
       </section>
       <section class="subscribe">
@@ -310,13 +302,13 @@
           <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Доставка</a>
+              <a class="footer-navigation-link button" href="#">Доставка</a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Гарантия</a>
+              <a class="footer-navigation-link button" href="#">Гарантия</a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Контакты</a>
+              <a class="footer-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
@@ -372,22 +364,20 @@
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="user-information">
             <div class="order-form-item username">
-              <label class="modal-form-label " for="username">Ваше имя:</label>
+              <label class="modal-form-label" for="username">Ваше имя:</label>
               <input class="modal-form-input" type="text" id="username" name="username" placeholder="Введите имя" required>
-              <span class="order-form-decoration"></span>
+              <span class="order-form-message">Добавьте имя</span>
             </div>
             <div class="order-form-item email">
               <label class="modal-form-label" for="email">Ваш e-mail:</label>
-              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта">
+              <input class="modal-form-input modal-input-invalid" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта" required>
               <span class="order-form-message">Забавный у вас адрес</span>
-              <span class="order-form-decoration"></span>
             </div>
           </div>
           <div class="order-products">
             <div class="order-products-item product-name">
               <label class="modal-form-label" for="product-name">Что нужно привезти:</label>
-              <input class="modal-form-input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
-              <span class="order-form-decoration"></span>
+              <input class="modal-form-input " type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
             </div>
             <div class="order-products-item product-count">
               <label class="modal-form-label count-label" for="product-count" tabindex="0">
@@ -413,5 +403,6 @@
         </form>
       </div>
     </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

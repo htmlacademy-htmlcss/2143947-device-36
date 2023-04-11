@@ -17,9 +17,8 @@
 
       <div class="top-header-block">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search-form-label" for="search-form">
-            <input class="search-form-input" type="text" placeholder="Поиск по сайту" id="search-form" required>
-            <span class="search-form-decoration"></span>
+          <label class="search-form-label">
+            <input class="search-form-input" type="text" aria-label="Поиск по сайту." placeholder="Поиск по сайту" required>
           </label>
           <button class="search-form-button button" type="submit">Найти</button>
         </form>
@@ -60,7 +59,7 @@
                   <p class="cart-total-price">Сумма: <span>2000 ₽</span></p>
                 </div>
                 <div class="cart-button-wrapper">
-                  <a class="cart-button" href="#">Открыть корзину</a>
+                  <a class="cart-button button" href="#">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -99,13 +98,13 @@
           </div>
           <ul class="product-navigation-list">
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Доставка</a>
+              <a class="product-navigation-link button" href="#">Доставка</a>
             </li>
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Гарантия</a>
+              <a class="product-navigation-link button" href="#">Гарантия</a>
             </li>
             <li class="product-navigation-item">
-              <a class="product-navigation-link" href="#">Контакты</a>
+              <a class="product-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -229,7 +228,6 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-link-image-container">
-                      <span class="new">new</span>
                       <img class="product-link-image" width="360" height="380" src="images/newbe-monopod.jpg" alt="Любительская селфи-палка.">
                       <span class="product-link-image-condition">Подробнее</span>
                     </div>
@@ -238,9 +236,8 @@
                   </a>
                 </li>
                 <li class="product-item">
-                  <a class="product-link" href="#">
+                  <a class="product-link new" href="#">
                     <div class="product-link-image-container">
-                      <span class="new new-show">new</span>
                       <img class="product-link-image" width="360" height="380" src="images/profi-monopod.jpg" alt="Профессиональная селфи-палка.">
                       <span class="product-link-image-condition">Подробнее</span>
                     </div>
@@ -251,7 +248,6 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-link-image-container">
-                      <span class="new">new</span>
                       <img class="product-link-image" width="360" height="380" src="images/waterproof-monopod.jpg" alt="Водостойкая селфи-палка.">
                       <span class="product-link-image-condition">Подробнее</span>
                     </div>
@@ -262,7 +258,6 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-link-image-container">
-                      <span class="new">new</span>
                       <img class="product-link-image" width="360" height="380" src="images/follow-me-monopod.jpg" alt="Селфи-палка с имитацией руки.">
                       <span class="product-link-image-condition">Подробнее</span>
                     </div>
@@ -271,7 +266,7 @@
                   </a>
                 </li>
               </ul>
-              <a class="product-button" href="#">Загрузить ещё</a>
+              <a class="product-button button" href="#">Загрузить ещё</a>
               <div class="pagination">
                 <a class="pagination-link page-select-link previous-page pagination-link-disabled" href="#">Назад</a>
                 <ol class="pagination-list">
@@ -308,13 +303,13 @@
           <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Доставка</a>
+              <a class="footer-navigation-link button" href="#">Доставка</a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Гарантия</a>
+              <a class="footer-navigation-link button" href="#">Гарантия</a>
             </li>
             <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Контакты</a>
+              <a class="footer-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
@@ -362,54 +357,5 @@
         </div>
       </div>
     </footer>
-
-    <section class="modal-container">
-      <div class="modal">
-        <h2 class="modal-heading heading">Доставка под заказ</h2>
-        <button class="button modal-close-button" type="button" aria-label="Закрыть."></button>
-        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="user-information">
-            <div class="order-form-item username">
-              <label class="modal-form-label " for="username">Ваше имя:</label>
-              <input class="modal-form-input" type="text" id="username" name="username" placeholder="Введите имя" required>
-              <span class="order-form-decoration"></span>
-            </div>
-            <div class="order-form-item email">
-              <label class="modal-form-label" for="email">Ваш e-mail:</label>
-              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта">
-              <span class="order-form-message">Забавный у вас адрес</span>
-              <span class="order-form-decoration"></span>
-            </div>
-          </div>
-          <div class="order-products">
-            <div class="order-products-item product-name">
-              <label class="modal-form-label" for="product-name">Что нужно привезти:</label>
-              <input class="modal-form-input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
-              <span class="order-form-decoration"></span>
-            </div>
-            <div class="order-products-item product-count">
-              <label class="modal-form-label count-label" for="product-count" tabindex="0">
-                Количество:
-                <span class="count-information">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
-              </label>
-              <div class="order-product-container">
-                <button class="count count-minus button" type="button">
-                  <svg width="16" height="3" viewBox="0 0 16 3">
-                    <path d="M16 0.786987H0V2.78699H16V0.786987Z"/>
-                  </svg>
-                </button>
-                <input class="modal-form-input count-input" type="number" id="product-count" name="product-count" placeholder="1" value="1" required>
-                <button class="count count-plus button" type="button">
-                  <svg width="16" height="17" viewBox="0 0 16 17">
-                    <path d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <button class="modal-submit-button button" type="submit">Отправить</button>
-        </form>
-      </div>
-    </section>
   </body>
 </html>
