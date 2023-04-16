@@ -97,13 +97,13 @@
             </div>
           </div>
           <ul class="product-navigation-list">
-            <li class="product-navigation-item">
+            <li>
               <a class="product-navigation-link button" href="#">Доставка</a>
             </li>
-            <li class="product-navigation-item">
+            <li>
               <a class="product-navigation-link button" href="#">Гарантия</a>
             </li>
-            <li class="product-navigation-item">
+            <li>
               <a class="product-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
@@ -116,15 +116,15 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер. Популярные товары.</h2>
         <div class="slider-wrapper">
-          <ul class="slider-list">
-            <li class="slider-item current-slider-item">
+          <ol class="slider-list">
+            <li class="slider-item current-slider-item" >
               <div class="slider-image-container">
                 <img class="slider-image" width="560" height="560" src="images/drone-slide.png" alt="Квадрокоптер.">
               </div>
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="slider-link button" href="#">Подробнее</a>
+                <a class="slider-link button button-decorated" href="#">Подробнее</a>
                 <table>
                   <tr>
                     <th class="parameters-count">800 м</th>
@@ -144,7 +144,7 @@
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Худеем правильно!</p>
                 <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="slider-link button" href="#">Подробнее</a>
+                <a class="slider-link button button-decorated" href="#">Подробнее</a>
                 <table>
                   <tr>
                     <th class="parameters-count">48 часов</th>
@@ -162,7 +162,7 @@
               <div class="slider-description-container">
                 <p class="slider-slogan heading">Делай селфи, как Бен Стиллер! </p>
                 <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                <a class="slider-link button" href="#">Подробнее</a>
+                <a class="slider-link button button-decorated" href="#">Подробнее</a>
                 <table>
                   <tr>
                     <th class="parameters-count">8,5 м</th>
@@ -177,7 +177,7 @@
                 </table>
               </div>
             </li>
-          </ul>
+          </ol>
           <button class="previous-slide slider-button button" type="button" aria-label="Предыдущий слайд."></button>
           <button class="next-slide slider-button button" type="button" aria-label="Следующий слайд."></button>
           <ul class="slider-pagination">
@@ -221,13 +221,13 @@
         <div class="services-container">
           <ul class="services-tabs-list">
             <li class="services-tabs-item">
-              <button class="tab-link tab-link-active button" type="button">Доставка</button>
+              <button class="tab-link tab-link-active button button-decorated" type="button">Доставка</button>
             </li>
             <li class="services-tabs-item">
-              <button class="tab-link button" type="button">Гарантия</button>
+              <button class="tab-link button button-decorated" type="button">Гарантия</button>
             </li>
             <li class="services-tabs-item">
-              <button class="tab-link button" type="button">Кредит</button>
+              <button class="tab-link button button-decorated" type="button">Кредит</button>
             </li>
           </ul>
           <div class="services-tab-content">
@@ -248,7 +248,9 @@
       </section>
       <section class="delivery">
         <h2 class="visually-hidden">Доставка</h2>
-        <a class="delivery-link button" href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-link button" href="#">
+          <span>Доставим редкий товар под заказ</span>
+        </a>
       </section>
       <section class="contacts-group">
         <h2 class="visually-hidden">Информация об организации и контакты.</h2>
@@ -261,7 +263,7 @@
             <li class="about-us-transport-item">СДИК</li>
             <li class="about-us-transport-item">ТоксБерри</li>
           </ul>
-          <a class="about-us-link button" href="#">Подробнее о нас</a>
+          <a class="about-us-link button button-decorated" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h3 class="contacts-heading heading">Контакты</h3>
@@ -275,7 +277,7 @@
             <h4 class="work-time-heading">Время работы</h4>
             <p class="work-time-description">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
           </div>
-          <a class="contacts-link button" href="#">Напишите нам</a>
+          <a class="contacts-link button button-decorated" href="#">Напишите нам</a>
         </div>
       </section>
       <section class="subscribe">
@@ -285,7 +287,9 @@
         </div>
         <div class="subscribe-form-wrapper">
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-form-input" type="email" placeholder="Ваш e-mail">
+            <label>
+              <input class="subscribe-form-input" type="email" aria-label="Ваш e-mail." placeholder="Ваш e-mail" required>
+            </label>
             <button class="subscribe-form-button button" type="submit">Подписаться</button>
           </form>
           <span class="subscribe-layout">Это бесплатно</span>
@@ -301,13 +305,13 @@
         <div class="footer-contacts">
           <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <ul class="footer-navigation-list">
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Доставка</a>
             </li>
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Гарантия</a>
             </li>
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>
@@ -399,7 +403,7 @@
               </div>
             </div>
           </div>
-          <button class="modal-submit-button button" type="submit">Отправить</button>
+          <button class="modal-submit-button button button-decorated" type="submit">Отправить</button>
         </form>
       </div>
     </section>
