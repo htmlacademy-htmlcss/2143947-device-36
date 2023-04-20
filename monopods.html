@@ -135,8 +135,14 @@
               <legend class="catalog-filter-title">Стоимость</legend>
               <div class="range-scale">
                 <div class="range-bar">
-                  <button class="range-toggle toggle-min button" type="button" aria-label="Изменить минимальную цену."><span class="toggle-description">от 0</span></button>
-                  <button class="range-toggle toggle-max button" type="button" aria-label="Изменить максимальную цену."><span class="toggle-description">до 5000</span></button>
+                  <div class="toggle-wrapper toggle-min">
+                    <button class="range-toggle button" type="button" aria-label="Изменить минимальную цену."></button>
+                    <span class="toggle-description" tabindex="0">от 0</span>
+                  </div>
+                  <div class="toggle-wrapper toggle-max">
+                    <button class="range-toggle button" type="button" aria-label="Изменить максимальную цену."></button>
+                    <span class="toggle-description" tabindex="0">до 5000</span>
+                  </div>
                 </div>
               </div>
             </fieldset>

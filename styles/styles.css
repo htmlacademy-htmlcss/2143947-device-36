@@ -1801,6 +1801,12 @@ a {
   background-color: #000000;
 }
 
+.toggle-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
 .range-toggle {
   position: absolute;
   width: 18px;
@@ -1813,12 +1819,12 @@ a {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0;
 }
 
 .toggle-max {
   top: -8px;
-  left: 110px;
+  left: 120px;
 }
 
 .range-toggle:hover {
@@ -1867,12 +1873,12 @@ a {
   outline: 2px solid #af4fff;
 }
 
-.toggle-min .toggle-description {
-  left: -5px;
+.toggle-min + .toggle-description {
+  left: -15px;
 }
 
-.toggle-max .toggle-description {
-  left: -22px;
+.toggle-max + .toggle-description {
+  left: 90px;
 }
 
 /* CHECKBOXES & RADIO */
