@@ -7,7 +7,13 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header class="page-header catalog-header">
@@ -134,15 +140,13 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
               <div class="range-scale">
-                <div class="range-bar">
-                  <div class="toggle-wrapper toggle-min">
-                    <button class="range-toggle button" type="button" aria-label="Изменить минимальную цену."></button>
-                    <span class="toggle-description" tabindex="0">от 0</span>
-                  </div>
-                  <div class="toggle-wrapper toggle-max">
-                    <button class="range-toggle button" type="button" aria-label="Изменить максимальную цену."></button>
-                    <span class="toggle-description" tabindex="0">до 5000</span>
-                  </div>
+                <div class="toggle-wrapper min-price">
+                  <button class="range-toggle button" type="button" aria-label="Изменить минимальную цену."></button>
+                  <input class="toggle-description" type="text" aria-label="Изменить минимальную цену." name="min-price" placeholder="от 0">
+                </div>
+                <div class="toggle-wrapper max-price">
+                  <button class="range-toggle button" type="button" aria-label="Изменить максимальную цену."></button>
+                  <input class="toggle-description" type="text" aria-label="Изменить максимальную цену." name="max-price" placeholder="до 5000">
                 </div>
               </div>
             </fieldset>
