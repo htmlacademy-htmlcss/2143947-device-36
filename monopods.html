@@ -18,7 +18,7 @@
   <body>
     <header class="page-header catalog-header">
       <a class="header-logo-link" href="index.html">
-        <img src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
+        <img class="header-logo-image" src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
       </a>
 
       <div class="top-header-block">
@@ -42,7 +42,7 @@
               <a class="compare" href="#">Сравнить</a>
             </li>
             <li class="cart">
-              <a class="cart-link" href="#">Корзина</a>
+              <a class="cart-link" href="#" data-cart="2">Корзина</a>
               <div class="cart-inner">
                 <ul class="cart-list">
                   <li class="cart-item">
@@ -217,6 +217,9 @@
               <div class="select-control-container">
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">Популярные</option>
+                  <option value="cheap">Дешевые</option>
+                  <option value="expensive">Дорогие</option>
+                  <option value="in stock">В наличии</option>
                 </select>
               </div>
               <div class="visualization-buttons">
@@ -244,7 +247,7 @@
                   </a>
                 </li>
                 <li class="product-item">
-                  <a class="product-link new" href="#">
+                  <a class="product-link" href="#">
                     <div class="product-link-image-container">
                       <img class="product-link-image" width="360" height="380" src="images/profi-monopod.jpg" alt="Профессиональная селфи-палка.">
                     </div>
@@ -307,13 +310,13 @@
         <div class="footer-contacts">
           <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <ul class="footer-navigation-list">
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Доставка</a>
             </li>
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Гарантия</a>
             </li>
-            <li class="footer-navigation-item">
+            <li>
               <a class="footer-navigation-link button" href="#">Контакты</a>
             </li>
           </ul>

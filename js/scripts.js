@@ -20,6 +20,27 @@ sliderTabButtons.forEach((tab, index) => {
   });
 });
 
+buttonPrevious.addEventListener('click', () => {
+  clearClasses();
+  counter = counter - 1;
+  if (counter < 0) {
+    counter = slides.length - 1;
+  }
+
+  slides[counter].classList.add('current-slider-item');
+  sliderTabButtons[counter].classList.add('slider-pagination-button-current');
+});
+
+buttonNext.addEventListener('click', () => {
+  clearClasses();
+  counter = counter + 1;
+  if (counter > slides.length - 1) {
+    counter = 0;
+  }
+  slides[counter].classList.add('current-slider-item');
+  sliderTabButtons[counter].classList.add('slider-pagination-button-current');
+});
+
 // TAB-BUTTONS
 
 const tabButtons = document.querySelectorAll('.tab-link');

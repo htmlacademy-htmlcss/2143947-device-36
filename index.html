@@ -18,7 +18,7 @@
   <body>
     <header class="page-header">
       <a class="header-logo-link" href="index.html">
-        <img src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
+        <img class="header-logo-image" src="images/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
       </a>
 
       <div class="top-header-block">
@@ -42,7 +42,7 @@
               <a class="compare" href="#">Сравнить</a>
             </li>
             <li class="cart">
-              <a class="cart-link" href="#">Корзина</a>
+              <a class="cart-link" href="#" data-cart="2">Корзина</a>
               <div class="cart-inner">
                 <ul class="cart-list">
                   <li class="cart-item">
@@ -202,22 +202,22 @@
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров.</h2>
         <ul class="categories-list">
-          <li class="categories-item">
+          <li class="categories-item virtual-reality">
             <a class="categories-link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="categories-item">
+          <li class="categories-item monopods">
             <a class="categories-link" href="monopods.html">Моноподы<br> для селфи</a>
           </li>
-          <li class="categories-item">
+          <li class="categories-item action-cameras">
             <a class="categories-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="categories-item">
+          <li class="categories-item fitness-bracers">
             <a class="categories-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="categories-item">
+          <li class="categories-item smart-watches">
             <a class="categories-link" href="#">Умные часы</a>
           </li>
-          <li class="categories-item">
+          <li class="categories-item quadrocopters">
             <a class="categories-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
@@ -255,7 +255,7 @@
       <section class="delivery">
         <h2 class="visually-hidden">Доставка</h2>
         <a class="delivery-link button" href="#">
-          <span>Доставим редкий товар под заказ</span>
+          Доставим редкий товар под заказ
         </a>
       </section>
       <section class="contacts-group">
@@ -380,7 +380,7 @@
             </div>
             <div class="order-form-item email">
               <label class="modal-form-label" for="email">Ваш e-mail:</label>
-              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" value="почта" required>
+              <input class="modal-form-input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               <span class="order-form-message">Забавный у вас адрес</span>
             </div>
           </div>
