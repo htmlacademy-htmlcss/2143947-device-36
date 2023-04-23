@@ -2735,7 +2735,7 @@ a.button-decorated:not([href]) {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
   position: relative;
 }
 
@@ -2889,17 +2889,20 @@ a.button-decorated:not([href]) {
   outline: none;
   cursor: pointer;
   max-width: 180px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px 0;
 }
 
-.count-label::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/information-icon.svg");
-  background-repeat: no-repeat;
-  top: -2px;
-  right: 34px;
+.count-heading {
+  max-width: 120px;
+  margin: 0 8px 0 0;
+}
+
+.information-icon {
   width: 26px;
   height: 26px;
+  padding: 0;
 }
 
 .count-information {
