@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -300,6 +300,7 @@ a.button-decorated:not([href]) {
 
 .search-form-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .user-navigation {
@@ -368,8 +369,7 @@ a.button-decorated:not([href]) {
 }
 
 .user-logout {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   position: relative;
   display: none;
 }
@@ -969,17 +969,26 @@ a.button-decorated:not([href]) {
   margin-bottom: 47px;
 }
 
+.parameters-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.parameters-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
 .parameters-count {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
   text-align: start;
-  padding: 0 16px 10px 0;
   color: #000000;
-}
-
-.parameters-count:last-child {
-  padding-right: 0;
 }
 
 .parameters-description {
@@ -987,11 +996,6 @@ a.button-decorated:not([href]) {
   font-size: 16px;
   line-height: 30px;
   text-align: start;
-  padding-right: 16px;
-}
-
-.parameters-description:last-child {
-  padding-right: 0;
 }
 
 .previous-slide {
@@ -1292,7 +1296,7 @@ a.button-decorated:not([href]) {
 
 .tab-link-active.button-decorated:hover,
 .tab-link-active.button-decorated:active,
-.tab-link-active.button-decorated:focus {
+.tab-link-active.button-decorated:focus-visible {
   justify-content: flex-start;
   padding-left: 50px;
 }
@@ -1541,6 +1545,10 @@ a.button-decorated:not([href]) {
   outline: 2px solid #af4fff;
 }
 
+.address-phone:active {
+  opacity: 0.3;
+}
+
 .contacts-work-time {
   margin-bottom: 30px;
 }
@@ -1615,7 +1623,7 @@ a.button-decorated:not([href]) {
   font-size: 18px;
   line-height: 30px;
   outline: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .subscribe-form-input::placeholder {
@@ -1644,7 +1652,7 @@ a.button-decorated:not([href]) {
   border: solid 3px #c4c4c4;
   padding: 15px 39px;
   max-width: 255px;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .subscribe-form-button:hover {
@@ -1653,6 +1661,16 @@ a.button-decorated:not([href]) {
 
 .subscribe-form-button:focus-visible {
   outline: 2px solid #af4fff;
+}
+
+.subscribe-form-button:active {
+  background-color: #000000;
+  color: #dcdcdc;
+}
+
+.subscribe-form-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .subscribe-layout {
@@ -2421,6 +2439,7 @@ a.button-decorated:not([href]) {
 
 .page-footer {
   background-color: #444444;
+  margin-top: auto;
 }
 
 .footer-wrapper {
@@ -2546,7 +2565,7 @@ a.button-decorated:not([href]) {
   line-height: 20px;
   position: relative;
   max-width: 175px;
-  margin-top: 8px;
+  margin: 8px 0 auto 0;
 }
 
 .footer-contacts-address-phone:hover {
@@ -2885,18 +2904,25 @@ a.button-decorated:not([href]) {
   display: none;
 }
 
-.count-label {
-  outline: none;
-  cursor: pointer;
-  max-width: 180px;
+.count-heading {
   display: flex;
   align-items: center;
+  max-width: 180px;
   margin: 0 0 8px 0;
 }
 
-.count-heading {
+.count-label {
+  outline: none;
   max-width: 120px;
   margin: 0 8px 0 0;
+}
+
+.information {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
 
 .information-icon {
@@ -2909,7 +2935,7 @@ a.button-decorated:not([href]) {
   position: absolute;
   display: none;
   top: 32px;
-  right: 0;
+  right: -35px;
   background-color: #000000;
   color: #ffffff;
   padding: 19px 17px 19px 19px;
@@ -2930,7 +2956,7 @@ a.button-decorated:not([href]) {
   width: 14px;
   height: 6px;
   top: -6px;
-  right: 40px;
+  right: 41px;
 }
 
 .count-information:after {
@@ -2942,10 +2968,9 @@ a.button-decorated:not([href]) {
   right: 0;
 }
 
-.count-label:hover .count-information,
-.count-label:focus .count-information,
-.count-label:focus-visible .count-information,
-.count-label:active .count-information {
+.information:hover .count-information,
+.information:focus .count-information,
+.information:focus-visible .count-information {
   display: block;
 }
 
