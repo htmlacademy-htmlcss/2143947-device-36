@@ -691,7 +691,6 @@ a.button-decorated:not([href]) {
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 102px;
 }
 
@@ -841,9 +840,10 @@ a.button-decorated:not([href]) {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0;
+  margin: 11px 0 10px 0;
   padding: 0;
   justify-content: space-between;
+  gap: 10px;
   max-width: 471px;
   flex-grow: 1;
   z-index: 1;
@@ -1532,6 +1532,7 @@ a.button-decorated:not([href]) {
 }
 
 .address-phone {
+  display: block;
   margin: 0;
   text-decoration: underline;
   color: #444444;
@@ -1716,7 +1717,8 @@ a.button-decorated:not([href]) {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 36px;
+  column-gap: 36px;
+  row-gap: 5px;
   max-width: 1040px;
 }
 
@@ -1746,10 +1748,19 @@ a.button-decorated:not([href]) {
   color: #000000;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
 .breadcrumbs-link:focus-visible {
   background-color: none;
   outline-offset: 2px;
   outline: 2px solid #af4fff;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 /* CATALOG */
@@ -1767,7 +1778,7 @@ a.button-decorated:not([href]) {
 }
 
 .catalog-filter-form {
-  padding: 25px 0 72px 60px;
+  padding: 25px 40px 72px 60px;
   max-width: 320px;
 }
 
@@ -1814,7 +1825,6 @@ a.button-decorated:not([href]) {
 }
 
 .catalog-filter-list {
-  width: 260px;
   list-style-type: none;
   margin: 4px 0 7px 0;
   padding: 0;
@@ -2164,7 +2174,7 @@ a.button-decorated:not([href]) {
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   row-gap: 32px;
-  column-gap: 71px;
+  column-gap: 20px;
   color: #444444;
   position: relative;
 }
@@ -2257,7 +2267,6 @@ a.button-decorated:not([href]) {
   letter-spacing: -0.02em;
   color: #000000;
   justify-content: flex-start;
-  align-self: top;
   margin: 0;
   padding: 0;
 }
@@ -2272,7 +2281,6 @@ a.button-decorated:not([href]) {
   align-self: flex-start;
   margin: 0;
   padding: 0;
-  max-width: 110px;
 }
 
 .product-link:hover .product-link-name {
@@ -2421,9 +2429,8 @@ a.button-decorated:not([href]) {
 .pagination-break:focus-visible,
 .pagination-break:active {
   color: rgba(68, 68, 68, 0.188);
-  cursor: default;
-  outline: none;
   background-color: transparent;
+  pointer-events: none;
 }
 
 .pagination-current,
@@ -2431,8 +2438,7 @@ a.button-decorated:not([href]) {
 .pagination-current:focus-visible,
 .pagination-current:active {
   color: rgba(68, 68, 68, 0.376);
-  cursor: default;
-  outline: none;
+  pointer-events: none;
 }
 
 /* FOOTER */
@@ -2559,6 +2565,7 @@ a.button-decorated:not([href]) {
 }
 
 .footer-contacts-address-phone {
+  display: block;
   color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
@@ -2694,7 +2701,6 @@ a.button-decorated:not([href]) {
 .modal {
   position: relative;
   margin: auto;
-  margin-top: 300px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -2850,6 +2856,7 @@ a.button-decorated:not([href]) {
   display: flex;
   position: relative;
   width: 180px;
+  z-index: 0;
 }
 
 .order-product-container .modal-form-input {
@@ -2966,6 +2973,11 @@ a.button-decorated:not([href]) {
   height: 20px;
   top: -20px;
   right: 0;
+}
+
+.information:focus,
+.information:focus-visible {
+  outline: none;
 }
 
 .information:hover .count-information,
